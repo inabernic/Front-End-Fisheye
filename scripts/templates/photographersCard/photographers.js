@@ -16,9 +16,9 @@ export class PhotographerCard {
                 <img src="assets/photographers/${this.portrait}" alt="photo de profil, ${this.alt}">
                 <h2>${this.name}</h2>
             </a>
-            <p>${this.city}, ${this.country}</p>
-            <p>${this.tagline}</p>
-            <p>${this.price}€/jour</p>`;
+            <p id="city">${this.city}, ${this.country}</p>
+            <p id="tagline">${this.tagline}</p>
+            <p id="price">${this.price}€/jour</p>`;
 
     article.innerHTML = contentCard;
     return article;
