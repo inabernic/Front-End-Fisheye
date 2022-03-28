@@ -1,17 +1,13 @@
-function photographerFactory(data) {
-    const { name, portrait } = data;
+import { MediaVideo } from "../templates/photographerMedias/MediaVideo.js";
+import { MediaImg } from "../templates/photographerMedias/MediaImg.js";
 
-    const picture = `assets/photographers/${portrait}`;
-
-    function getUserCardDOM() {
-        const article = document.createElement( 'article' );
-        const img = document.createElement( 'img' );
-        img.setAttribute("src", picture)
-        const h2 = document.createElement( 'h2' );
-        h2.textContent = name;
-        article.appendChild(img);
-        article.appendChild(h2);
-        return (article);
+//recover the media files
+export class MediasFactory {
+  constructor(media, photographeName) {
+    if (media.image == undefined) {
+      return new MediaVideo(media, photographeName);
+    } else {
+      return new MediaImg(media, photographeName);
     }
-    return { name, picture, getUserCardDOM }
+  }
 }
