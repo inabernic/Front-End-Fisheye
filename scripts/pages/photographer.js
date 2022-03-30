@@ -3,6 +3,7 @@ import { Form } from "../utils/contactForm.js";
 import { PhotographerProfil as PhotographeHeader } from "../templates/photographerProfil/photographerProfil.js";
 import { MediasFactory } from "../factories/photographerMediasFactory.js";
 import { Lightbox } from "../utils/lightbox.js";
+import { AsideLikes } from "../templates/likes/photographerAsideLikes.js";
 
 class App {
   static async init() {
