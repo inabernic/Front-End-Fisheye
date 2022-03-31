@@ -2,9 +2,7 @@
 
 body {
     font-family: "DM Sans", sans-serif;
-    margin: 2rem;
-    border: 1px solid black;
-
+    margin: 5rem;
 }
 
 
@@ -18,12 +16,11 @@ header {
 
 h1 {
     color: #901C1C;
-    margin-right: 100px;
 }
 
 .logo {
     height: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .photographer_section  {
@@ -55,7 +52,7 @@ h1 {
 }
 
 #city{
-    color: #D3573C;
+    color: #901C1C;
 }
 
 #tagline, #city{

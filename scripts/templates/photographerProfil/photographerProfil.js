@@ -10,8 +10,8 @@ export class PhotographerProfil {
   createUserProfil() {
     const photographeCard = `
         <div>
-            <h1>${this.name}</h1>
-            <p>${this.city}, ${this.country}</p>
+            <h1 id="name">${this.name}</h1>
+            <p id="city">${this.city}, ${this.country}</p>
             <p>${this.tagline}</p>
         </div>
         <div>

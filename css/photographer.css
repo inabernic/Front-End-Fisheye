@@ -75,16 +75,16 @@ form input {
     border-radius: 5px;
 }
 
-section{
-width: 100%;
-}
-
 .section-photographe{
-display: flex;
-width: 100%;
-display: grid;
+    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px;
+    margin-left: 50px;
+    background-color:#FAFAFA ;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
 }
 
 .section-photographe img{
@@ -105,4 +105,10 @@ article img, video{
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+}
+
+.section-photographe h1 {
+    color: #D3573C;
+    font-size: 2rem;
+    text-decoration: none;
 }
