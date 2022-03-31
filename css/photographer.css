@@ -74,3 +74,35 @@ form input {
     border: none;
     border-radius: 5px;
 }
+
+section{
+width: 100%;
+}
+
+.section-photographe{
+display: flex;
+width: 100%;
+display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+}
+
+.section-photographe img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+article img, video{
+    width: 200px;
+    height: 200px;
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
