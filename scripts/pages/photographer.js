@@ -20,7 +20,6 @@ class App {
     this.medias = globalData.media;
     this.photographers = globalData.photographers;
     this.id = id;
-
     const photographer = this.photographers.find(
       (photographe) => photographe.id === this.id
     );
