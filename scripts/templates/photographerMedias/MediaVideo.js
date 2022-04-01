@@ -14,13 +14,15 @@ export class MediaVideo {
     article.classList = "mediaBox";
     article.innerHTML = `
             <video src="${videoLink}" aria-label="${this.alt}, vue rapprochée" role="link" tabIndex="0"></video>
-            <div>
+            <div id="infoMediaBox">
                 <span class="titles">${this.title}</span>
+                <div>
                 <span class="likes">${this.likes}</span>
-                <span class="spanIcon" aria-label="likes" tabIndex="0" role="button">
+                <span class="spanIcon" role="checkbox" aria-checked="true" aria-label="likes" tabIndex="0" >
                     <input type="checkbox" id="${this.id}" name="like" aria-label="liké">
                     <label for="${this.id}"><i class="fas fa-heart"></i></label>
                 </span>
+                </div>
             </div>`;
     return article;
   }

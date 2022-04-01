@@ -14,13 +14,15 @@ export class MediaImg {
     article.classList = "mediaBox";
     article.innerHTML = `
             <img src="${pictureLink}" alt="${this.alt}, vue rapprochée" role="link" tabIndex="0">
-            <div>
+            <div id="infoMediaBox">
                 <span class="titles">${this.title}</span>
+                <div>
                 <span class="likes">${this.likes}</span>
                 <span class="spanIcon" aria-label="likes" tabIndex="0" role="button">
                     <input type="checkbox" id="${this.id}" name="like" aria-label="liké">
                     <label for="${this.id}"><i class="fas fa-heart"></i></label>
                 </span>
+                </div>
             </div>`;
     return article;
   }

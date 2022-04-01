@@ -11,11 +11,11 @@ export class AsideLikes {
     });
 
     const contentAside = `        
-            <div>
-                <span class="globalLikes">${likes}</span>
+            <div id="globalCountLikes">
+                <span class="globalLikes">${likes} <i class="fas fa-heart"></i>
+                </span>
                 <div class="countLikes">
-                    <i class="fas fa-heart"></i>
-                    <span>${this.photographerProfil.price}€ / jour</span>                      
+                    <span>${this.photographerProfil.price}€ / jour</span>                
                 </div>
             </div>`;
     aside.innerHTML = contentAside;
