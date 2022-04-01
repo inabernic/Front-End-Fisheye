@@ -133,7 +133,7 @@ article img, video{
 .portfolio-filter p{
     font-size: 20px;
     font-weight: bold;
-    padding: 11px;
+    padding-right: 15px;
 }
 
 .toggle-listbox{
@@ -150,15 +150,33 @@ margin-right: 5px;
     margin-left: 10px;
 }
 
+#filtre{
+padding-top: 10px;
+}
+
 .dropdown{
     font-size: 20px;
     font-weight: bold;
     color: white;
     padding: 11px;
-    width: 170px;
-    height: 70px;
     border: none;
     background-color: #901C1C;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.sort-option{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    border: none;
+    background-color: #901C1C;
+    border-radius: 5px;
+    cursor: pointer;
+    border-top: 1px solid #FAFAFA;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    display: none;
 }
