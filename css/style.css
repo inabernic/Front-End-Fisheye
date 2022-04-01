@@ -2,7 +2,7 @@
 
 body {
     font-family: "DM Sans", sans-serif;
-    margin: 5rem;
+    margin: 4rem;
 }
 
 
@@ -20,14 +20,13 @@ h1 {
 
 .logo {
     height: 50px;
-    margin-left: 50px;
 }
 
 .photographer_section  {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .photographer_section article {
@@ -38,13 +37,23 @@ h1 {
     flex-direction: column;
 }
 
+.photographer_section article a{
+    margin-left: auto;
+    margin-right: auto;
+    display: contents;
+    text-decoration: none;
+}
 .photographer_section article h2 {
     color: #D3573C;
     font-size: 36px;
+    margin-bottom: unset;
+    margin-top: 0.7rem;
+    text-align: center;
 }
 
-article a{
-    text-decoration: none;
+article p{
+   margin-top: unset;
+   margin-bottom: unset;
 }
 
 .photographer_section article img {

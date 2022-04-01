@@ -9,7 +9,7 @@ export class PhotographerProfil {
   }
   createUserProfil() {
     const photographeCard = `
-        <div>
+        <div id="profil">
             <h1 id="name">${this.name}</h1>
             <p id="city">${this.city}, ${this.country}</p>
             <p>${this.tagline}</p>
