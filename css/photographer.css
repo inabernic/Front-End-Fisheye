@@ -79,15 +79,22 @@ form input {
     text-align: left;
 }
 
-.section-photographe {
+#section-photographe {
     display: flex;
+    flex-wrap: wrap;
     background-color: #FAFAFA;
-    padding: 2rem;
+    padding: 1.5rem;
     align-items: center;
     justify-content: space-between;
+} 
+
+@media screen and (max-width: 600px) {
+    #section-photographe{
+        display: grid;
+    }
 }
 
-.section-photographe img {
+#section-photographe img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -105,14 +112,12 @@ video {
     display: flex;
     flex-wrap: wrap;
     gap: 70px;
-    margin-top: 20px;
+    margin-top: 40px;
     align-items: center;
     justify-content: space-between;
-    ;
-
 }
 
-.section-photographe h1 {
+#section-photographe h1 {
     color: #D3573C;
     font-size: 3rem;
     text-decoration: none;
@@ -124,13 +129,14 @@ video {
     margin: 0;
 }
 
-.section-photographe p {
+#section-photographe p {
     font-size: 1rem;
     margin-top: 10px;
 }
 
 .portfolio-filter {
     display: flex;
+    margin-top: 20px;
 }
 
 .portfolio-filter p {
@@ -205,4 +211,8 @@ video {
     padding: 25px;
     border: none;
     border-radius: 5px;
+}
+
+#contact-modal{
+    display: none;
 }

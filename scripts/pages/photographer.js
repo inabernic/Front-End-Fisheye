@@ -48,7 +48,7 @@ class PhotographerProfil {
     this.photographerSection();
   }
   photographerSection() {
-    const sectionPhotographe = document.querySelector(".section-photographe");
+    const sectionPhotographe = document.querySelector("#section-photographe");
     const sectionContent = new PhotographeHeader(this.photographer);
     sectionPhotographe.innerHTML = sectionContent.createUserProfil();
     new Form(this.photographer);
