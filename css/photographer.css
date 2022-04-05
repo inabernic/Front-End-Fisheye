@@ -77,6 +77,15 @@ form input {
 
 #profil {
     text-align: left;
+    width: 402px;
+}
+
+#btnContactProfil{
+    width: 170px;
+}
+
+#imgProfil{
+    width: 200px;
 }
 
 #section-photographe {
@@ -88,9 +97,12 @@ form input {
     justify-content: space-between;
 } 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1095px) {
     #section-photographe{
-        display: grid;
+        flex-direction: column-reverse;
+    }
+    #profil p{
+        text-align: center;
     }
 }
 

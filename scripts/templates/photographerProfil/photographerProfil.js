@@ -14,10 +14,10 @@ export class PhotographerProfil {
             <p id="city">${this.city}, ${this.country}</p>
             <p>${this.tagline}</p>
         </div>
-        <div>
+        <div id="btnContactProfil">
             <button class="contact-button open-form">Contactez-moi</button>
         </div>
-        <div>
+        <div id="imgProfil">
             <img src="assets/photographers/${this.portrait}" alt="photo de profil, ${this.alt}">
         </div>`;
 
