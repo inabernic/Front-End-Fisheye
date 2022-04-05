@@ -14,7 +14,7 @@ export class Form {
     this.keyboardNav();
   }
   displayModal(photographerName) {
-    const formh2 = document.querySelector(".header-modal h2");
+    const formh2 = document.querySelector(".header-modal h1");
     formh2.innerHTML = "Contactez-moi<br>" + photographerName;
     this.form.style.display = "flex";
 
