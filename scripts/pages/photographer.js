@@ -207,7 +207,7 @@ class Portfolio {
     mediaLikes.forEach((element) => {
       likes = likes + parseFloat(element.innerText);
     });
-    globalLikes.innerText = likes;
+    globalLikes.innerHTML = likes + `   <i class="fas fa-heart"></i>`;
   }
 }
 

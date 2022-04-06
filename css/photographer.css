@@ -16,15 +16,14 @@
     width: 170px;
     height: 70px;
     border: none;
-    background-color: #901C1C;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .modal {
     border-radius: 5px;
-    background-color: #DB8876;
-    width: 38%;
+    background-color: #D3573C;
+    width: 36%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +31,7 @@
     padding: 50px;
     margin: auto;
     left: 29%;
-    top: 14%;
+    top: 10%;
     position: absolute;
 }
 
@@ -49,8 +48,9 @@
     font-weight: 100;
     color: black;
     text-align: left;
-    font-family: inherit;
-    font-size: 4rem;
+    font-family: 'DM Sans';
+    font-size: 3.5rem;
+    margin-top: 5px;
 }
 
 form {
@@ -59,12 +59,13 @@ form {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 15px;
-    height: 745px;
+    height: 630px;
 }
 
 form label {
     color: #312E2E;
-    font-size: 27px;
+    font-size: 2rem;
+    font-family: 'DM Sans';
 }
 
 form div {
@@ -73,13 +74,14 @@ form div {
     width: 100%;
     align-items: self-start;
     margin-bottom: 26px;
+    margin-top: 20px;
 }
 
 form input {
     width: 100%;
-    height: 50px;
+    height: 63px;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 textarea{
@@ -95,18 +97,18 @@ textarea{
 }
 
 #btnContactProfil{
-    width: 350px;
+    width: 372px;
 }
 
 #imgProfil{
-    width: 285px;
+    width: 200px;
 }
 
 #section-photographe {
     display: flex;
     flex-wrap: wrap;
     background-color: #FAFAFA;
-    padding: 2rem;
+    padding: 4rem;
     align-items: center;
     justify-content: space-between;
 } 
@@ -121,23 +123,24 @@ textarea{
 }
 
 #section-photographe img {
-    height: 250px;
-    width: 250px;
+    height:200px;
+    width: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 article img,
-video {
-    width: 430px;
-    height: 350px;
+article video {
+    width: 369px;
+    height: 366px;
     object-fit: cover;
+    border-radius: 7px;
 }
 
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 41px;
     margin-top: 40px;
     align-items: center;
     justify-content: space-between;
@@ -148,11 +151,15 @@ video {
     font-size: 4rem;
     text-decoration: none;
     margin: 0;
+    font-family: unset;
+    font-weight: 500;
 }
 
 #section-photographe p {
     font-size: 1.5rem;
     margin-top: 10px;
+    font-family: unset;
+    font-weight: 500;
 }
 
 .portfolio-filter {
@@ -192,7 +199,6 @@ margin-top: 14px;
     color: white;
     padding: 11px;
     border: none;
-    background-color: #901C1C;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -203,7 +209,7 @@ margin-top: 14px;
     color: white;
     padding: 11px;
     border: none;
-    background-color: #901C1C;
+
     border-radius: 5px;
     cursor: pointer;
     border-top: 1px solid #FAFAFA;
@@ -213,15 +219,34 @@ margin-top: 14px;
     display: none;
 }
 
-#infoMediaBox {
+.sort-option, .open-form, .dropdown, .send {
+    background-color: #901C1C;
+}
+
+.open-form:hover {
+    background-color: #D3573C;
+    color: black;
+}
+
+.mediaBox input{
+display: none;
+}
+
+#infoMediaBox{
     color: #901C1C;
+}
+
+#infoMediaBox {
+    font-size: 1.5rem;
+    margin-top: 9px;
+    font-weight: 500;
     display: flex;
     justify-content: space-between;
 }
 
 #globalCountLikes {
-    background-color: #DB8876;
-    width: 215px;
+    background-color: #D3573C;
+    width: 300px;
     height: 15px;
     display: flex;
     align-items: center;
@@ -229,7 +254,7 @@ margin-top: 14px;
     position: fixed;
     bottom: 1px;
     right: 45px;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     padding: 25px;
     border: none;
@@ -245,10 +270,36 @@ margin-top: 14px;
     font-weight: bold;
     color: white;
     padding: 11px;
-    width: 135px;
+    width: 155px;
     height: 65px;
     border: none;
-    background-color: #901C1C;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
+}
+
+/*  Lightbox*/
+.lightbox{
+    display: inline-flex;
+    align-items: center;
+}
+
+.lightbox-content{
+    width: 100%;
+}
+
+.lightbox-content img{
+    width: 100%;
+}
+.lightbox-left, .lightbox-right{
+  width: 10%;
+}
+
+.lightbox-right{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.previous, .next{
+    justify-content: center;
 }
