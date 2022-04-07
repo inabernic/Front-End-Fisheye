@@ -5,6 +5,7 @@ body {
     padding-top: 1rem;
     margin:auto;
     max-width: 1600px;
+    font-family: sans-serif;
 }
 
 
@@ -20,6 +21,7 @@ header {
 
 h1 {
     color: #901C1C;
+    font-weight: 500;
 }
 
 .logo {
@@ -50,14 +52,13 @@ h1 {
 .photographer_section article h2 {
     color: #D3573C;
     font-size: 36px;
-    margin-bottom: unset;
-    margin-top: 0.7rem;
+    margin: 0.7rem;
     text-align: center;
+    font-weight: 500;
 }
 
 article p{
-   margin-top: unset;
-   margin-bottom: unset;
+   margin-bottom: -3px;
 }
 
 .photographer_section article img {
