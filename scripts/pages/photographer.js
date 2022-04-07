@@ -99,11 +99,6 @@ class Portfolio {
               return b.likes - a.likes;
             });
             break;
-          case "date":
-            this.medias.sort(function (a, b) {
-              return new Date(b.date) - new Date(a.date);
-            });
-            break;
           case "title":
             this.medias.sort(function (a, b) {
               return a.title.localeCompare(b.title);

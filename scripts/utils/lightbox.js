@@ -50,7 +50,7 @@ export class Lightbox {
     this.leftArrow = document.querySelector(".previous");
     this.rightArrow = document.querySelector(".next");
     this.closeIcon = document.querySelector(".close");
-
+    //
     this.displayLightboxContent(mediaLink, title);
     this.manageEvent();
     this.keyboardNav();

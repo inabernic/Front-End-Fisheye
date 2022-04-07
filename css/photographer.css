@@ -91,13 +91,13 @@ textarea{
 
 #profil {
     text-align: left;
-    width: 402px;
     font-family: inherit;
     margin-left: 25px;
 }
 
 #btnContactProfil{
-    width: 372px;
+    /* width: 372px; */
+    align-self: center;
 }
 
 #imgProfil{
@@ -168,15 +168,15 @@ article video {
 }
 
 #filtre{
-margin-top: 14px;
+margin-top: 18px;
+font-size: 20px;
 }
 
 .portfolio-filter p {
-    font-size: 20px;
-    font-weight: bold;
     padding-right: 15px;
     margin-top: 6px;
     margin-bottom: 6px;
+    font-size: 20px;
 }
 
 .toggle-listbox {
@@ -194,8 +194,6 @@ margin-top: 14px;
 }
 
 .dropdown {
-    font-size: 20px;
-    font-weight: bold;
     color: white;
     padding: 11px;
     border: none;
@@ -203,13 +201,14 @@ margin-top: 14px;
     cursor: pointer;
 }
 
-.sort-option {
+.portfolio-filter p, .active-option {
     font-size: 20px;
-    font-weight: bold;
+}
+.sort-option {
+    font-size: 18px;
     color: white;
     padding: 11px;
     border: none;
-
     border-radius: 5px;
     cursor: pointer;
     border-top: 1px solid #FAFAFA;
@@ -232,11 +231,12 @@ margin-top: 14px;
 display: none;
 }
 
-#infoMediaBox{
+#infoMediaBox, .lightbox-content p{
     color: #901C1C;
+    width: 369px;
 }
 
-#infoMediaBox {
+#infoMediaBox, .lightbox-content p {
     font-size: 1.5rem;
     margin-top: 9px;
     font-weight: 500;
@@ -280,7 +280,14 @@ display: none;
 /*  Lightbox*/
 .lightbox{
     display: inline-flex;
-    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 20px;
+    top: 43px;
+    height: 100%;
+    width: 96%;
+    overflow: auto;
+    background-color: #FAFAFA;
 }
 
 .lightbox-content{
@@ -290,16 +297,35 @@ display: none;
 .lightbox-content img{
     width: 100%;
 }
-.lightbox-left, .lightbox-right{
-  width: 10%;
+
+.lightbox-left{
+    justify-items: center;
 }
 
 .lightbox-right{
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .previous, .next{
     justify-content: center;
 }
+
+.hidden{
+    display: none;
+}
+
+/* 
+.lightbox button{
+    size: 3rem;
+    color: #901C1C;
+}
+.fas{
+    size: 3rem;
+    color: #901C1C;
+}
+.fa-angle-right, .fa-solid, .fa-angle-left{
+    size: 3rem;
+    color: #901C1C;
+} */
