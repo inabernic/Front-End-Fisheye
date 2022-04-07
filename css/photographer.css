@@ -117,8 +117,11 @@ textarea{
     #section-photographe{
         flex-direction: column-reverse;
     }
-    #profil p{
+    #profil p, #name{
         text-align: center;
+    }
+    #modal-Title{
+        font-size: 2.8rem;
     }
 }
 
@@ -237,7 +240,7 @@ display: none;
 }
 
 #infoMediaBox, .lightbox-content p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-top: 9px;
     font-weight: 500;
     display: flex;
@@ -292,8 +295,8 @@ display: none;
     position: fixed;
     z-index: 1;
     left: 20px;
-    top: 43px;
-    height: 96%;
+    top: 0;
+    height: 100%;
     width: 96%;
     overflow: auto;
     background-color: white;
@@ -334,6 +337,20 @@ margin-right: 20px;
     font-size: 3rem;
     color: #901C1C;
 } 
+
+.fa-heart{
+    transition: all 0.25s ease-out;
+}
+
+
+.fa-heart:hover, .fa-heart:focus{
+    color:#D3573C;
+}
+
+.fa-heart:active{
+    color:#D3573C;
+}o
+
 
 .lightbox button{
     border: none;

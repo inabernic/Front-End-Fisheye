@@ -178,10 +178,14 @@ class Portfolio {
       if (media.liked === undefined || media.liked === "false") {
         nbLikes += 1;
         media.liked = "true";
+        console.log(likeButton);
         likeButton.parentElement.setAttribute("aria-label", "liké");
       } else {
         nbLikes -= 1;
         media.liked = "false";
+        likeButton.style.color = "black";
+        console.log(likeButton.parentElement);
+        console.log(media.liked);
       }
 
       // redefine the number of media likes
