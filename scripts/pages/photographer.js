@@ -178,19 +178,22 @@ class Portfolio {
       if (media.liked === undefined || media.liked === "false") {
         nbLikes += 1;
         media.liked = "true";
-        console.log(likeButton);
+        document.activeElement.style.color = "#D3573C";
         likeButton.parentElement.setAttribute("aria-label", "liké");
       } else {
         nbLikes -= 1;
         media.liked = "false";
-        likeButton.style.color = "black";
-        console.log(likeButton.parentElement);
-        console.log(media.liked);
+        document.activeElement.style.color = "unset";
       }
 
       // redefine the number of media likes
       media.likes = nbLikes;
       likeButton.parentElement.previousElementSibling.textContent = nbLikes;
+      console.log("3");
+      console.log(media.likes);
+      console.log("4");
+      console.log(likeButton.parentElement.previousElementSibling.textContent);
+      //media.likes.style.color = "red";
       this.implementTotalLikes();
     });
   }

@@ -338,20 +338,6 @@ margin-right: 20px;
     color: #901C1C;
 } 
 
-.fa-heart{
-    transition: all 0.25s ease-out;
-}
-
-
-.fa-heart:hover, .fa-heart:focus{
-    color:#D3573C;
-}
-
-.fa-heart:active{
-    color:#D3573C;
-}o
-
-
 .lightbox button{
     border: none;
     background-color: unset;
