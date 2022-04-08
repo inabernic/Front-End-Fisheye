@@ -185,15 +185,9 @@ class Portfolio {
         media.liked = "false";
         document.activeElement.style.color = "unset";
       }
-
       // redefine the number of media likes
       media.likes = nbLikes;
       likeButton.parentElement.previousElementSibling.textContent = nbLikes;
-      console.log("3");
-      console.log(media.likes);
-      console.log("4");
-      console.log(likeButton.parentElement.previousElementSibling.textContent);
-      //media.likes.style.color = "red";
       this.implementTotalLikes();
     });
   }
