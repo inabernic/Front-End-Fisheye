@@ -17,6 +17,7 @@ export class Form {
     const formh2 = document.querySelector(".header-modal h1");
     formh2.innerHTML = "Contactez-moi<br>" + photographerName;
     this.form.style.display = "flex";
+
     // Hide background page of focus
     Array.from(document.body.children).forEach((child) => {
       if (child !== this.form) {
@@ -83,14 +84,14 @@ export class Form {
     }
   }
 
-  // La fonction dedié pour la validation de la form
+  // The fonction for la validation of the form
   validate() {
     let valid = true;
     valid = valid & this.checkFirstName();
     valid = valid & this.checklastName();
     valid = valid & this.checkemailValid();
     valid = valid & this.checkMessage();
-    return false;
+    return valid;
   }
 
   /**  La verification et validation du Prenom  FirstName , la longeur min 2 caracteres, sans caracteres speciaux, les accents accepteés, la fonction return un boolean */
@@ -102,11 +103,11 @@ export class Form {
 
     if (isFirstNameValid) {
       firstErrorMsg.classList.add("hidden");
-      firstName.setCustomValidity("");
+      firstName.classList.remove("invalid");
     } else {
       firstErrorMsg.classList.remove("hidden");
-      //la transformation in input invalid, pour activer les styles du css, qui va colorer le background du input
-      firstName.setCustomValidity("Invalid field.");
+      firstName.classList.add("invalid");
+      //the transformation of the input invalid,the activation of the css, for the coloration of the backgound input
     }
     return isFirstNameValid;
   }
@@ -120,10 +121,10 @@ export class Form {
 
     if (isLastNameValid) {
       lastErrorMsg.classList.add("hidden");
-      lastName.setCustomValidity("");
+      lastName.classList.remove("invalid");
     } else {
       lastErrorMsg.classList.remove("hidden");
-      lastName.setCustomValidity("Invalid field.");
+      lastName.classList.add("invalid");
     }
     return isLastNameValid;
   }
@@ -138,30 +139,25 @@ export class Form {
 
     if (isEmailValid) {
       emailErrorMsg.classList.add("hidden");
-      emailValid.setCustomValidity("");
+      emailValid.classList.remove("invalid");
     } else {
       emailErrorMsg.classList.remove("hidden");
-      emailValid.setCustomValidity("Invalid field.");
+      emailValid.classList.add("invalid");
     }
     return isEmailValid;
   }
   checkMessage() {
     const mess = document.getElementById("commentaire");
     const messErrorMsg = document.querySelector(".messErrorMsg");
-    //console.log(messErrorMsg);
-    //const regPatern = /^[[A-Za-z\é\è\ê\ç\ë\à\-]$/;
-    //console.log(mess.value);
-    //console.log(mess);
-    const isMessNameValid = mess.value;
-    //console.log(isMessNameValid);
-    if (isMessNameValid) {
+    const isMessValid = mess.value != "";
+    if (isMessValid) {
       messErrorMsg.classList.add("hidden");
       mess.setCustomValidity("");
     } else {
       messErrorMsg.classList.remove("hidden");
-      //la transformation in input invalid, pour activer les styles du css, qui va colorer le background du input
+      //the transformation of the input invalid,the activation of the css, for the coloration of the backgound input
       mess.setCustomValidity("Invalid field.");
     }
-    return isMessNameValid;
+    return isMessValid;
   }
 }

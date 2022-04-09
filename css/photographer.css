@@ -381,3 +381,7 @@ article video {
     color: #901C1C;
     ;
 }
+
+.invalid {
+    box-shadow: 0 0 5px 4px #901C1C;
+  }
