@@ -70,7 +70,7 @@ export class Form {
     });
   }
   closeModal(beforeElementFocus) {
-    this.form.style.display = "none";
+    this.form.style = "";
     this.closeButton.setAttribute("tabindex", "-1");
 
     // Make the page focusable again

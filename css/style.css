@@ -4,7 +4,8 @@ body {
     padding: 6rem;
     padding-top: 1rem;
     margin:auto;
-    max-width: 1600px;
+    max-width: 1400px;
+    min-width: 370px;
     font-family: sans-serif;
 }
 

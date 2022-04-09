@@ -10,7 +10,7 @@ export class LightboxContainer {
                 <button class="previous" aria-label="Image précédente"><i class="fas fa-angle-left"></i></button>
             </div>
             <div class="lightbox-content">
-                <div>
+                <div class="box">
                 </div>
             </div>
             <div class="lightbox-right">
