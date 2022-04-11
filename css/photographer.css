@@ -23,11 +23,14 @@
 .modal {
     border-radius: 5px;
     background-color: #D3573C;
-    width: 36%;
-    padding: 3.7rem;
+    width: 37%;
+    padding: 2rem;
     margin: auto;
-    top: 5%;
+    /* top: 9%; */
     min-width: 370px;
+    margin-top: 14px;
+    overflow: auto;
+    height: 88%;
 }
 
 .modal header img {
@@ -39,8 +42,8 @@
     color: black;
     text-align: left;
     font-family: sans-serif;
-    font-size: 3.2rem;
-    margin-top: 5px;
+    font-size: 2.7rem;
+    margin-top: 0;
 }
 
 form label {
@@ -51,17 +54,8 @@ form label {
 
 #commentaire {
     width: 100%;
-    height: 138px;
+    height: 120px;
 }
-
-/* .text-control:valid{
-    box-shadow: none ;
-}
-
-.text-control:invalid{
-    box-shadow: 0 0 7px 3px #901C1C ;
-}
- */
 
 #profil {
     text-align: left;
@@ -265,11 +259,22 @@ article video {
     background-color: #fafafa4f;
 }
 
+.header-modal{
+margin-top: 0;
+margin-bottom: 0;
+}
+
+#modal-Title{
+margin-bottom: 3px;
+}
+
+#boxForm{
+margin-top: 7px;
+}
+
 .send {
     font-size: 20px;
-    font-weight: bold;
     color: white;
-    padding: 11px;
     width: 155px;
     height: 65px;
     border: none;
@@ -288,11 +293,13 @@ article video {
     width: 96%;
     overflow: auto;
     background-color: white;
+    justify-content: center;
 }
 
 .lightbox-content {
-    width: 95%;
+    width: 50%;
     height: 95%;
+    min-width: 370px;
 }
 
 .box {
@@ -304,7 +311,7 @@ article video {
 .lightbox-content img,
 .lightbox-content video {
     width: 100%;
-    height: 90%;
+    height: 94%;
     margin-top: 40px;
     object-fit: cover;
 }
@@ -351,12 +358,12 @@ article video {
 /*  form incription */
 .text-control {
     margin: 0;
-    padding: 7px;
+    padding-left: 7px;
     width: 100%;
     border: none;
     border-radius: 8px;
-    font-size: 1.7rem ;
-    height: 60px;
+    font-size: 1rem ;
+    height: 48px;
     box-sizing: border-box;
 }
 
