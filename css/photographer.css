@@ -180,6 +180,10 @@ article video {
     cursor: pointer;
 }
 
+.hiddenButton{
+    display: none;
+}
+
 .portfolio-filter p,
 .active-option {
     font-size: 20px;
@@ -190,7 +194,6 @@ article video {
     color: white;
     padding: 11px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     border-top: 1px solid #FAFAFA;
     width: 100%;
