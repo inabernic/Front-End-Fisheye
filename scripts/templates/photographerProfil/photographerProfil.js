@@ -15,7 +15,7 @@ export class PhotographerProfil {
             <p>${this.tagline}</p>
         </div>
         <div id="btnContactProfil">
-            <button class="contact-button open-form">Contactez-moi</button>
+            <button class="contact-button open-form" tabindex="0" >Contactez-moi</button>
         </div>
         <div id="imgProfil">
             <img src="assets/photographers/${this.portrait}" alt="photo de profil, ${this.alt}">

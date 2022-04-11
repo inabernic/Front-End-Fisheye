@@ -37,17 +37,17 @@ h1 {
 }
 
 .photographer_section article {
-    justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+article div{
+    text-align: center;
+}
+
 .photographer_section article a{
-    margin-left: auto;
-    margin-right: auto;
-    display: contents;
     text-decoration: none;
 }
 .photographer_section article h2 {
@@ -75,6 +75,10 @@ article p{
 
 #tagline, #city{
 font-weight: bold;
+}
+
+#tagline,#price, .photographer_section img{
+    text-align: center;  
 }
 
 #price{

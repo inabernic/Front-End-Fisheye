@@ -81,7 +81,6 @@ form label {
 }
 
 
-
 @media screen and (max-width: 800px) {
     #section-photographe {
         flex-direction: column-reverse;
@@ -160,6 +159,7 @@ article video {
 
 .toggle-listbox {
     display: flex;
+    justify-content: space-between;
 }
 
 .toggle-listbox i {
@@ -178,10 +178,11 @@ article video {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 140px;
 }
 
 .hiddenButton{
-    display: none;
+ 
 }
 
 .portfolio-filter p,
@@ -192,7 +193,7 @@ article video {
 .sort-option {
     font-size: 18px;
     color: white;
-    padding: 11px;
+    padding: 10px;
     border: none;
     cursor: pointer;
     border-top: 1px solid #FAFAFA;
