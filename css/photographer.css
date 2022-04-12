@@ -182,7 +182,7 @@ article video {
 }
 
 .hiddenButton{
- 
+ display: none;
 }
 
 .portfolio-filter p,
@@ -372,8 +372,8 @@ margin-top: 7px;
 }
 
 .msg {
-    font-size: 1.3rem;
-    color: #901C1C;
+    font-size: 0.9rem;
+    color: white;
     ;
 }
 

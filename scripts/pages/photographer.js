@@ -76,7 +76,10 @@ class Portfolio {
 
     // togglebox button property
     toggleBox.addEventListener("click", () => {
+      let changeIcon = document.querySelector(".fa-solid");
       if (widgetOpen == false) {
+        changeIcon.classList.remove("fa-angle-down");
+        changeIcon.classList.add("fa-angle-up");
         sortOptions.forEach((option) => {
           option.style.display = "block";
         });
@@ -84,6 +87,8 @@ class Portfolio {
         widgetOpen = true;
       } else {
         sortOptions.forEach((option) => {
+          changeIcon.classList.remove("fa-angle-up");
+          changeIcon.classList.add("fa-angle-down");
           option.style.display = "none";
         });
         widgetOpen = false;
@@ -108,7 +113,7 @@ class Portfolio {
         this.generatePortfolio(this.medias);
 
         // new list of options
-        const hideElement = document.querySelector(".hidden button");
+        const hideElement = document.querySelector(".hiddenButton button");
         const activeOption = document.querySelector(".active-option");
         const currentButtonPos = sortOptions.indexOf(element);
         const clickedOptionValue = sortOptions[currentButtonPos].innerText;
@@ -118,7 +123,7 @@ class Portfolio {
           `liste de trie, trié par ${clickedOptionValue}`
         );
         document.querySelector(".dropdown").appendChild(hideElement);
-        document.querySelector(".hidden").appendChild(element);
+        document.querySelector(".hiddenButton").appendChild(element);
         optionShowed = document.querySelectorAll(".dropdown > button");
 
         // close the sortwidget after clicking on an option
