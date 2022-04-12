@@ -1,7 +1,7 @@
-#contact_modal {
-    display: none;
-}
 
+/* Page photohrapher  */
+
+/* main-> #section-photographe  */
 .photograph-header {
     background-color: #FAFAFA;
     height: 300px;
@@ -20,47 +20,12 @@
     cursor: pointer;
 }
 
-.modal {
-    border-radius: 5px;
-    background-color: #D3573C;
-    width: 37%;
-    padding: 2rem;
-    margin: auto;
-    min-width: 370px;
-    margin-top: 14px;
-    overflow: auto;
-    height: 88%;
-}
-
-.modal header img {
-    cursor: pointer;
-}
-
-.modal header h1 {
-    font-weight: 500;
-    color: black;
-    text-align: left;
-    font-family: sans-serif;
-    font-size: 2.7rem;
-    margin-top: 0;
-}
-
-form label {
-    color: #312E2E;
-    font-size: 1.7rem;
-    font-family: 'DM Sans';
-}
-
-#commentaire {
-    width: 100%;
-    height: 120px;
-}
-
 #profil {
     text-align: left;
     font-family: inherit;
     margin-left: 25px;
 }
+
 
 #btnContactProfil {
     align-self: center;
@@ -104,6 +69,59 @@ form label {
     width: 200px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+
+/* Modal contact  */
+#contact_modal {
+    display: none;
+}
+
+.open-form {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    width: 170px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal {
+    border-radius: 5px;
+    background-color: #D3573C;
+    width: 37%;
+    padding: 2rem;
+    margin: auto;
+    min-width: 370px;
+    margin-top: 75px;
+    overflow: auto;
+}
+
+.modal header img {
+    cursor: pointer;
+}
+
+.modal header h1 {
+    font-weight: 500;
+    color: black;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 2.7rem;
+    margin-top: 0;
+}
+
+form label {
+    color: #312E2E;
+    font-size: 1.7rem;
+    font-family: 'DM Sans';
+}
+
+#commentaire {
+    width: 100%;
+    height: 120px;
 }
 
 article img,
