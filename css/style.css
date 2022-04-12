@@ -3,12 +3,11 @@
 body {
     padding: 6rem;
     padding-top: 1rem;
-    margin:auto;
+    margin: auto;
     max-width: 1400px;
     min-width: 370px;
     font-family: sans-serif;
 }
-
 
 header {
     display: flex;
@@ -29,7 +28,7 @@ h1 {
     height: 50px;
 }
 
-.photographer_section  {
+.photographer_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px;
@@ -42,13 +41,14 @@ h1 {
     flex-direction: column;
 }
 
-article div{
+article div {
     text-align: center;
 }
 
-.photographer_section article a{
+.photographer_section article a {
     text-decoration: none;
 }
+
 .photographer_section article h2 {
     color: #D3573C;
     font-size: 36px;
@@ -57,8 +57,8 @@ article div{
     font-weight: 500;
 }
 
-article p{
-   margin-bottom: -3px;
+article p {
+    margin-bottom: -3px;
 }
 
 .photographer_section article img {
@@ -68,18 +68,21 @@ article p{
     object-fit: cover;
 }
 
-#city{
+#city {
     color: #901C1C;
 }
 
-#tagline, #city{
-font-weight: bold;
+#tagline,
+#city {
+    font-weight: bold;
 }
 
-#tagline,#price, .photographer_section img{
-    text-align: center;  
+#tagline,
+#price,
+.photographer_section img {
+    text-align: center;
 }
 
-#price{
+#price {
     color: #525252;
 }

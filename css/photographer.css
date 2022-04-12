@@ -26,7 +26,6 @@
     width: 37%;
     padding: 2rem;
     margin: auto;
-    /* top: 9%; */
     min-width: 370px;
     margin-top: 14px;
     overflow: auto;
@@ -80,7 +79,6 @@ form label {
     justify-content: space-between;
 }
 
-
 @media screen and (max-width: 800px) {
     #section-photographe {
         flex-direction: column-reverse;
@@ -94,6 +92,7 @@ form label {
     #modal-Title {
         font-size: 2.8rem;
     }
+
     .portfolio {
         flex-wrap: wrap;
         flex-direction: column;
@@ -181,8 +180,8 @@ article video {
     width: 140px;
 }
 
-.hiddenButton{
- display: none;
+.hiddenButton {
+    display: none;
 }
 
 .portfolio-filter p,
@@ -263,17 +262,17 @@ article video {
     background-color: #fafafa4f;
 }
 
-.header-modal{
-margin-top: 0;
-margin-bottom: 0;
+.header-modal {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-#modal-Title{
-margin-bottom: 3px;
+#modal-Title {
+    margin-bottom: 3px;
 }
 
-#boxForm{
-margin-top: 7px;
+#boxForm {
+    margin-top: 7px;
 }
 
 .send {
@@ -366,7 +365,7 @@ margin-top: 7px;
     width: 100%;
     border: none;
     border-radius: 8px;
-    font-size: 1rem ;
+    font-size: 1rem;
     height: 48px;
     box-sizing: border-box;
 }

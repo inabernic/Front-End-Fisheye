@@ -129,6 +129,9 @@ class Portfolio {
         // close the sortwidget after clicking on an option
         sortOptions.forEach((option) => {
           option.style.display = "none";
+          let changeIcon = document.querySelector(".fa-solid");
+          changeIcon.classList.remove("fa-angle-up");
+          changeIcon.classList.add("fa-angle-down");
         });
         widgetOpen = false;
         toggleBox.focus();
