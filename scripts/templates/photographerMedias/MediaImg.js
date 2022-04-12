@@ -19,7 +19,7 @@ export class MediaImg {
                 <div>
                 <span class="likes">${this.likes}</span>
                 <span class="spanIcon" aria-label="likes" tabIndex="0" role="button">
-                    <input type="checkbox" id="${this.id}" name="like" aria-label="liké">
+                    <input type="checkbox" id="${this.id}" name="like" aria-label="liké" tabIndex="0">
                     <label for="${this.id}"><i class="fas fa-heart"></i></label>
                 </span>
                 </div>
