@@ -13,7 +13,7 @@ export class PhotographerCard {
     const article = document.createElement("article");
     const contentCard = `
     <div>
-            <a href="photographer.html?photographer=${this.id}">
+            <a href="photographer.html?photographer=${this.id}" aria-label="redirige vers la page du photographe">
                 <img src="assets/photographers/${this.portrait}" alt="photo de profil, ${this.alt}">
                 <h2>${this.name}</h2>
             </a>
