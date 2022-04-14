@@ -68,21 +68,21 @@ article p {
     object-fit: cover;
 }
 
-#city {
+.city {
     color: #901C1C;
 }
 
-#tagline,
-#city {
+.tagline,
+.city {
     font-weight: bold;
 }
 
-#tagline,
-#price,
+.tagline,
+.price,
 .photographer_section img {
     text-align: center;
 }
 
-#price {
+.price {
     color: #525252;
 }

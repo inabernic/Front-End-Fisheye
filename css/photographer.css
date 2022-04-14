@@ -1,3 +1,6 @@
+p{
+line-height: 1.5;
+}
 
 /* Page photohrapher  */
 
@@ -164,7 +167,7 @@ article video {
 
 #filtre {
     margin-top: 18px;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .portfolio-filter p {
@@ -204,7 +207,7 @@ article video {
 
 .portfolio-filter p,
 .active-option {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .sort-option {
@@ -236,13 +239,13 @@ article video {
     display: none;
 }
 
-#infoMediaBox,
+.infoMediaBox,
 .lightbox-content p {
     color: #901C1C;
     width: 369px;
 }
 
-#infoMediaBox,
+.infoMediaBox,
 .lightbox-content p {
     font-size: 1.4rem;
     margin-top: 9px;

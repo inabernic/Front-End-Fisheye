@@ -13,13 +13,13 @@ export class PhotographerCard {
     const article = document.createElement("article");
     const contentCard = `
     <div>
-            <a href="photographer.html?photographer=${this.id}" aria-label="redirige vers la page du photographe">
+            <a href="photographer.html?photographer=${this.id}" aria-label="${this.name}">
                 <img src="assets/photographers/${this.portrait}" alt="photo de profil, ${this.alt}">
                 <h2>${this.name}</h2>
             </a>
-            <p id="city">${this.city}, ${this.country}</p>
-            <p id="tagline">${this.tagline}</p>
-            <p id="price">${this.price}€/jour</p>
+            <p class="city">${this.city}, ${this.country}</p>
+            <p class="tagline">${this.tagline}</p>
+            <p class="price">${this.price}€/jour</p>
     </div>;`;
 
     article.innerHTML = contentCard;

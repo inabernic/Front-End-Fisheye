@@ -55,6 +55,7 @@ export class Lightbox {
     this.manageEvent();
     this.keyboardNav();
   }
+  //display lightbox
   displayLightboxContent(mediaLink, title) {
     const contentContainer = this.lightbox.querySelector(
       ".lightbox-content div"
@@ -74,6 +75,7 @@ export class Lightbox {
       }
     });
   }
+  //listner events of click
   manageEvent() {
     this.leftArrow.addEventListener("click", (e) => {
       e.stopPropagation();

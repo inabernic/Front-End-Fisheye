@@ -14,7 +14,7 @@ export class MediaImg {
     article.classList = "mediaBox";
     article.innerHTML = `
             <img src="${pictureLink}" alt="${this.alt}, vue rapprochée" role="link" tabIndex="0">
-            <div id="infoMediaBox">
+            <div class="infoMediaBox">
                 <span class="titles">${this.title}</span>
                 <div>
                 <span class="likes">${this.likes}</span>
