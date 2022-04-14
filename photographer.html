@@ -9,7 +9,6 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <title>Fisheye - photographe </title>
 </head>
-
 <body>
   <header>
     <a href="index.html" aria-label="redirige vers la page d'accueil">
@@ -17,12 +16,10 @@
     </a>
   </header>
   <main id="main">
-
     <section id="section-photographe">
       <!--Content here-->
     </section>
     <section class="portfolio-section">
-
       <div class="portfolio-filter">
         <p id="filtre">Trier par:</p>
         <div class="dropdown">
@@ -31,17 +28,14 @@
             <p class="active-option">Popularité</p>
             <i class="fa-solid fa-angle-down"></i>
           </div>
-
           <div class="hiddenButton">
             <button class="sort-option" value="popularity" type="button" tabindex="0"
               aria-label="trié par popularité">Popularité</button>
           </div>
-
           <button class="sort-option" value="title" type="button" tabindex="0" aria-label="trié par titre"
             aria-expanded="false">Titre</button>
         </div>
       </div>
-
       <div class="portfolio">
         <!--Content here-->
       </div>
@@ -61,39 +55,30 @@
             <input class="text-control" type="text" name="prenom" id="prenom" placeholder="Jean" minlength="2" required>
             <span class="msg firstErrorMsg hidden">Veuillez entrer min 2 caractères sans celles spéciaux!</span>
           </div>
-
           <div class="formData">
             <label for="nom" aria-labelledby="nom">Nom *</label>
             <input class="text-control" type="text" name="nom" id="nom" placeholder="Dupont" minlength="2" required>
             <span class="msg hidden lastErrorMsg">Veuillez entrer min 2 caractères sans celles spéciaux!</span>
           </div>
-
           <div class="formData">
             <label for="email" aria-labelledby="email">Email *</label>
             <input class="text-control" type="email" name="email" id="email" placeholder="jean.dupont@gmail.com"
               required>
             <span class="msg hidden emailErrorMsg">Veuillez entrer un email valide! </span>
           </div>
-
           <div class="formData">
             <label for="commentaire" aria-labelledby="commentaire">Votre message *</label>
             <textarea class="text-control" name="textarea" rows="5" cols="30" id="commentaire"
               placeholder="Maximum 200 caractères" minlength="2" maxlength="200" required></textarea>
             <span class="msg hidden messErrorMsg">Veuillez entrer min 2 et max 250 caractères!</span>
           </div>
-
           <button class="contact-button submit send">Envoyer</button>
         </div>
       </form>
     </div>
   </div>
-
   <!-- Page -->
   <script type="module" src="scripts/pages/photographer.js"></script>
-  
-
-  <!-- Polyfill -->
-  <!-- <script src="node_modules/wicg-inert/dist/inert.min.js"></script> -->
 </body>
 
 </html>
