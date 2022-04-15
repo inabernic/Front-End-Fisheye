@@ -23,16 +23,16 @@
       <div class="portfolio-filter">
         <p id="filtre">Trier par:</p>
         <div class="dropdown">
-          <div class="toggle-listbox" role="combobox" tabindex="0" aria-label="liste de tri, trié par popularité"
-            aria-expanded="true">
+          <div class="toggle-listbox" role="button" tabindex="0" aria-label="liste de tri, trié par popularité"
+            aria-expanded="true" aria-haspopup=”listbox” aria-expanded>
             <p class="active-option">Popularité</p>
             <i class="fa-solid fa-angle-down"></i>
           </div>
           <div class="hiddenButton">
-            <button class="sort-option" value="popularity" type="button" tabindex="0"
+            <button class="sort-option" value="popularity" type="button" tabindex="0" role=”listbox”
               aria-label="trié par popularité">Popularité</button>
           </div>
-          <button class="sort-option" value="title" type="button" tabindex="0" aria-label="trié par titre"
+          <button class="sort-option" value="title" role=”listbox” type="button" tabindex="0" aria-label="trié par titre"
             aria-expanded="false">Titre</button>
         </div>
       </div>
