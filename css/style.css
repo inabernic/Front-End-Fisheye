@@ -29,16 +29,21 @@ h1 {
 }
 
 .photographer_section {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px;
     margin-top: 70px;
+    width: 100%;
+    justify-content: center;
 }
 
 .photographer_section article {
     display: flex;
     align-items: center;
     flex-direction: column;
+    min-width: 360px;
+    width: 25%;
 }
 
 article div {
