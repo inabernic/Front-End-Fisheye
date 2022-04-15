@@ -86,3 +86,10 @@ article p {
 .price {
     color: #525252;
 }
+
+
+@media screen and (min-width: 400px) {
+    .photographer-section {
+        display: flex;
+    }
+}
